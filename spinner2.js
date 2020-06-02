@@ -1,8 +1,8 @@
 const spinner = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|'];
 
-for (let delay = 0; delay < spinner.length; delay++) {
-  
+for (let i = 0; i < spinner.length; i++) {
+
   setTimeout(() => {
-    process.stdout.write(`\r${spinner[delay]}   `);
-  }, (delay * 200 + 100));
+    process.stdout.write(`\r${spinner[i]}   `);
+  }, (i * 200 + 100));
 }
